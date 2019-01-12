@@ -262,6 +262,7 @@ footer {
   width: 29.4%;
   height: 35px;
   border-radius: 5px;
+  cursor: pointer;
 }
 .home .walk .walk-text .btn:hover {
   background-color: white;
