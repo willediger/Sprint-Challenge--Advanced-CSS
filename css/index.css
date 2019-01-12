@@ -209,6 +209,9 @@ a {
   color: #454A59;
   font-size: 1.6rem;
 }
+.stretch h1 {
+  animation: bounceIn 1s;
+}
 footer {
   color: #22283B;
   background: #f4f4f4;
@@ -348,4 +351,17 @@ footer {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.2);
+    opacity: 0.5;
+  }
+  60% {
+    transform: scale(1.2);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
 }
