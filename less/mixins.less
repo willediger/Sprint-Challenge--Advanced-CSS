@@ -1,1 +1,10 @@
 // Mixins Here
+
+.flex(@justify: space-between) {
+  display: flex;
+  justify-content: @justify;
+}
+
+.solid-border(@border-loc; @border-color) {
+  @{border-loc}: 2px solid @border-color;
+}
