@@ -8,3 +8,20 @@
 .solid-border(@border-loc; @border-color) {
   @{border-loc}: 2px solid @border-color;
 }
+
+.sign-up-btn(@width, @height) {
+  .flex(center);
+  align-items: center;
+  background-color: @btn-bg-color;
+  color: @btn-font-color;
+  font-size: 1.8rem;
+  width: @width;
+  height: @height;
+  border-radius: 5px;
+}
+
+.sign-up-btn-hover {
+  background-color: @btn-font-color;
+  color: @btn-bg-color;
+  border: 1px solid @btn-bg-color;
+}
