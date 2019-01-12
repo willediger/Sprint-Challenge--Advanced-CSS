@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Adaptive websites use breakpoints to make the website look appropriate on certain sizes, like mobile, and tablet views. Fully responsive websites take the best of both worlds, and use responsive units (like percents) to make the website look appropriate on those breakpoints, but also in between them so it's a seamless experience regardless of the size or resolution of the device.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first defines the styles for mobile devices first, or at the top of the stylesheet, and uses min-width media queries instead of max-width to define the increasingly larger device styles. Desktop first defines the styles for desktop devices first, and uses max-width media queries to define the decreasing smaller device styles.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+It sets the base font size to 10px, which allows you to set rem units based on a multiple of 10, which makes for nicer math. E.g. to then set a font-size of 16px, you'd set 1.6rem in that scenario.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing is a way to organize your CSS into modules, define variables for re-use, and define mixins, which are like functions for repeating styles across your page. It also allows for nesting your styles as you would your HTML, which makes it easier to visually see specificity, and makes your code less verbose. The preprocessor takes your preprocessing files and then compiles it to CSS for you. The preprocessing files are not read by the browser.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite concept in preprocessing is definitely mixins. It's getting closer to actual programming, which I really enjoy. I like the ability to refactor things and make programs easy to maintain and write. I haven't really run into any concepts that give me trouble.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
