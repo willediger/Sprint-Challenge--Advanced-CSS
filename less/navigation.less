@@ -1,1 +1,29 @@
-// Navigation code here
+.nav {
+  .flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 13px 0 10px 0;
+  background-color: @nav-bg;
+  .solid-border(border-bottom; @nav-border);
+  h1 {
+    padding-bottom: 19px;
+  }
+  nav {
+    .flex;
+    width: 37.6%;
+    @media @phone {
+      width: 75%;
+    }
+  }
+  a {
+    color: @nav-font;
+    font-size: 1.6rem;
+  } 
+}
+
+.stretch {
+  h1 {
+    animation: bounceIn 1s;
+  }
+}
